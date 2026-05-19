@@ -11,37 +11,57 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--charcoal);
-  background: var(--warm-cream);
+html {
+  min-height: 100%;
 }
 
-main {
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--charcoal);
+  background:
+    radial-gradient(circle at top, rgba(255, 193, 77, 0.20), transparent 34rem),
+    var(--warm-cream);
+}
+
+.page-shell {
   min-height: 100vh;
   display: grid;
   place-items: center;
   padding: 48px 24px;
+}
+
+.hero {
+  width: min(100%, 1080px);
   text-align: center;
 }
 
-h1 {
-  margin: 0 0 16px;
-  font-size: clamp(3rem, 10vw, 7rem);
-  letter-spacing: -0.06em;
+.hero-logo {
+  display: block;
+  width: min(100%, 960px);
+  height: auto;
+  margin: 0 auto 36px;
 }
 
-p {
-  max-width: 720px;
-  margin: 0 auto 16px;
-  font-size: 1.2rem;
-  line-height: 1.6;
+.intro {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
+  color: var(--charcoal);
 }
 
-.tagline {
-  color: var(--deep-orange);
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 32px 18px;
+  }
+
+  .hero-logo {
+    margin-bottom: 28px;
+  }
+
+  .intro {
+    font-size: 1rem;
+  }
 }
