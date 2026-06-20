@@ -4,23 +4,213 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Brixel House</title>
-  <meta name="description" content="Brixel House creates focused apps and wholesome games built from simple ideas, clear rules, and thoughtful play.">
+  <meta name="description" content="Brixel House creates focused apps, wholesome games, and thoughtful tools built from simple ideas, clear rules, and respectful design.">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main class="page-shell">
-    <section class="hero">
-      <img
-        class="hero-logo"
-        src="assets/brixel-main-logo.png"
-        alt="Brixel logo with the tagline Focused Apps. Wholesome Games."
-      >
 
-      <p class="intro">
-        Brixel House is an independent app and game brand led by Mario Gravina,
-        with contributions from invited collaborators.
-      </p>
+<body>
+  <header class="site-header">
+    <a class="brand-link" href="index.html" aria-label="Brixel House home">
+      <img src="assets/brixel-main-logo.png" alt="Brixel House" class="brand-mark">
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="#apps">Apps & Games</a>
+      <a href="#tools">Tools</a>
+      <a href="why-games-like-these.html">Why These Games</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent apps, games, and tools</p>
+        <h1>Focused Apps. Wholesome Games. Thoughtful Tools.</h1>
+        <p class="intro">
+          Brixel House is an independent app and game brand led by Mario Gravina,
+          with contributions from invited collaborators. We build small, purposeful software
+          with clear rules, respectful design, and no exploitative monetization.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#available">See what’s available</a>
+          <a class="button secondary" href="why-games-like-these.html">Why we build this way</a>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-label="Brixel House platform areas">
+        <div class="platform-strip">
+          <div class="platform-chip">
+            <img src="assets/ios_icon.png" alt="" aria-hidden="true">
+            <span>iOS</span>
+          </div>
+          <div class="platform-chip">
+            <img src="assets/macos_icon.png" alt="" aria-hidden="true">
+            <span>macOS</span>
+          </div>
+          <div class="platform-chip">
+            <img src="assets/windows_icon.png" alt="" aria-hidden="true">
+            <span>Windows</span>
+          </div>
+        </div>
+
+        <p>
+          Small projects across Apple platforms, desktop tools, simulator utilities,
+          and local-first experiments.
+        </p>
+      </div>
+    </section>
+
+    <section id="available" class="section feature-section">
+      <div class="section-heading">
+        <p class="eyebrow">Available now</p>
+        <h2>Published app</h2>
+        <p>
+          The first shipped Brixel House app is simple by design: one focused job,
+          no ads, no tracking, and no account system.
+        </p>
+      </div>
+
+      <article class="featured-app">
+        <div class="featured-image-wrap">
+          <img
+            src="assets/football-scheduler-card.png"
+            alt="Football Schedule Alerts 2026 preview card"
+            class="project-image"
+          >
+        </div>
+
+        <div class="featured-copy">
+          <p class="status-pill">Available on the App Store</p>
+          <h3>Football Schedule Alerts 2026</h3>
+          <p>
+            A tournament reminder app built to help users keep track of upcoming matches
+            without ads, tracking, or unnecessary friction.
+          </p>
+
+          <div class="card-actions">
+            <a class="button primary" href="#" aria-label="View Football Schedule Alerts 2026 on the App Store">View App</a>
+            <a class="button secondary" href="support.html">Support</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="apps" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">iOS & Apple projects</p>
+        <h2>Apps and games in development</h2>
+        <p>
+          These projects explore useful reminders, small games, humor, puzzles,
+          and Apple Watch-sized play.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="assets/dog-translator-card.png" alt="Dog Translator preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">Concept</p>
+            <h3>Dog Translator</h3>
+            <p>A humorous bark-to-thought entertainment app for playful dog moments.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/last-raft-out-card.png" alt="Last Raft Out preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">Prototype</p>
+            <h3>Last Raft Out</h3>
+            <p>A local board-game-style escape adventure aboard the S.S. Fairweather.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/watch-mole-card.png" alt="Watch Mole Game preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">Exploring</p>
+            <h3>Watch Mole Game</h3>
+            <p>A quick reaction game designed for short Apple Watch play sessions.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/quilt-logic-card.png" alt="Quilt Logic Puzzle preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">Concept</p>
+            <h3>Quilt Logic Puzzle</h3>
+            <p>A calm pattern-and-color logic puzzle inspired by fabric and quilting.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="section alt-section">
+      <div class="section-heading">
+        <p class="eyebrow">PC, simulator, and local tools</p>
+        <h2>Thoughtful desktop experiments</h2>
+        <p>
+          Brixel House also explores practical tools, simulator add-ons, and local-first
+          AI workflows outside the App Store.
+        </p>
+      </div>
+
+      <div class="project-grid three-up">
+        <article class="project-card">
+          <img src="assets/flight-sim-addons-card.png" alt="Flight Sim Add-ons preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">PC / Simulator</p>
+            <h3>Flight Sim Add-ons</h3>
+            <p>Scenery refinements, object improvements, and simulator utility concepts.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/ai-tools-card.png" alt="Local AI Tools preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">Local-first</p>
+            <h3>Local AI Tools</h3>
+            <p>Traceable offline-first experiments for local model workflows.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/desktop-utilities-card.png" alt="Desktop Utilities preview card" class="project-image">
+          <div class="project-card-copy">
+            <p class="status-pill">Desktop</p>
+            <h3>Desktop Utilities</h3>
+            <p>Focused tools for practical workflows on desktop platforms.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section philosophy-preview">
+      <div>
+        <p class="eyebrow">Design position</p>
+        <h2>No ads. No tracking. No engagement traps.</h2>
+        <p>
+          Brixel House projects are designed to be useful, funny, calm, or replayable
+          without manipulating attention. We prefer honest software: clear purpose,
+          fair pricing, and respect for the user’s time.
+        </p>
+      </div>
+
+      <a class="button primary" href="why-games-like-these.html">Read the philosophy</a>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Brixel House. All rights reserved.</p>
+
+    <nav aria-label="Footer navigation">
+      <a href="about.html">About</a>
+      <a href="why-games-like-these.html">Why These Games</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </footer>
 </body>
 </html>
