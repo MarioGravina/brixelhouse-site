@@ -1,0 +1,66 @@
+{
+  "frontMatter.framework.id": "custom",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Dev Diary",
+      "path": "[[workspace]]/_posts"
+    }
+  ],
+  "frontMatter.content.publicFolder": "assets",
+  "frontMatter.content.defaultFileType": "md",
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "devdiary",
+      "pageBundle": false,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "Summary",
+          "name": "summary",
+          "type": "string"
+        },
+        {
+          "title": "Image",
+          "name": "image",
+          "type": "image"
+        },
+        {
+          "title": "Project",
+          "name": "project",
+          "type": "choice",
+          "choices": [
+            "Brixel House",
+            "QOLity Matters",
+            "Racing PC Game 2D",
+            "Last Raft Out",
+            "Football Schedule Alerts 2026",
+            "Website"
+          ]
+        },
+        {
+          "title": "Entry Type",
+          "name": "entryType",
+          "type": "choice",
+          "choices": [
+            "Dev Diary",
+            "Build Note",
+            "Design Note",
+            "Release Note",
+            "Technical Note",
+            "Postmortem"
+          ]
+        }
+      ]
+    }
+  ]
+}
